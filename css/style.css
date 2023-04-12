@@ -46,13 +46,10 @@ nav i {
 
 main {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto 1fr;
     gap: 1rem;
     justify-items: center;
-    margin-top: 100px;
-    margin-right: 200px;
-    margin-bottom: 50px;
     margin: 100px 50px 200px 50px;
 }
 
@@ -68,13 +65,15 @@ main p {
     color: #fbfbf6;
     background-color: #2e5339;
     padding: 10px;
+    width: 400px;
 }
 
 main img { 
     grid-row: 1 / 4;
     grid-column: 2;
-    width: 300px;
+    width: 400px;
     border: 5px solid #2e5339;
+    margin-left: 0px;
 }
 
 footer {
@@ -87,6 +86,7 @@ footer div {
     display: flex;
     align-items: center;
     font-size: large;
+    clear: b
 }
 
 footer i {
