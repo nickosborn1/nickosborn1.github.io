@@ -18,26 +18,41 @@
 		<a href="/html/contact.html" class="active"><i class="fas fa-envelope"></i>Contact</a>
 	</nav>
 	<main>
-		<div id="phone number">
-			<i class="fas fa-phone"></i>
-			<h3> Phone Number: (714) 853-4403</h3>
-		</div>
-		<div id="email">
-			<i class="fas fa-envelope"></i>
-			<h3> Email: nosborn2003@gmail.com</h3>
-		</div>
-		<div id="linkedin">
-			<i class="fa-brands fa-linkedin"></i>
-			<h3><a href="https://www.linkedin.com/in/nick-osborn-56271324a/" target="_blank"> LinkedIn</a></h3>
-		</div>
-		<div id="github">
-			<i class="fa-brands fa-github"></i>
-			<h3><a href="https://github.com/nickosborn1" target="_blank"> GitHub</a></h3>
-		</div>
-		<div id="resume">
-			<i class="fas fa-circle-down"></i>
-			<h3><a href="/assets/Nick Osborn Resume.pdf" download="Nick Osborn Resume"> Download my resume</a></h3>
-		</div>
+		<section class="contact_info">
+			<div id="phone number">
+				<i class="fas fa-phone"></i>
+				<h3> Phone Number: (714) 853-4403</h3>
+			</div>
+			<div id="email">
+				<i class="fas fa-envelope"></i>
+				<h3> Email: nosborn2003@gmail.com</h3>
+			</div>
+			<div id="linkedin">
+				<i class="fa-brands fa-linkedin"></i>
+				<h3><a href="https://www.linkedin.com/in/nick-osborn-56271324a/" target="_blank"> LinkedIn</a></h3>
+			</div>
+			<div id="github">
+				<i class="fa-brands fa-github"></i>
+				<h3><a href="https://github.com/nickosborn1" target="_blank"> GitHub</a></h3>
+			</div>
+			<div id="resume">
+				<i class="fas fa-circle-down"></i>
+				<h3><a href="/assets/Nick Osborn Resume.pdf" download="Nick Osborn Resume"> Download my resume</a></h3>
+			</div>
+		</section>		
+		<form action="send_email.php" action="/send_email.php" method="post">
+			<h3>Send me a message</h3>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<br>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+			<input type="submit" value="Submit">
+		  </form>
+		  
 	</main>
 </body>
 </html>
