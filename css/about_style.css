@@ -12,11 +12,13 @@ header {
     align-items: center;
 }
 
+
 header img {
     float: left;
     width: 50px;
     margin-right: 10px;
     border: 3px solid #2f1000;
+    border-radius: 5px;
 }
 
 nav {
@@ -24,6 +26,7 @@ nav {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+    border-radius: 5px;
 }
 nav a {
     float: left;
@@ -33,11 +36,16 @@ nav a {
     text-decoration: none;
     font-size: 18px;
     flex-grow: 1;
-    border: 2px solid #2f1000
+    border: 2px solid #2f1000;
+    border-left: none;
 }
 
 nav a.active {
     background-color: #57473c;
+}
+
+nav a.first {
+    border-left: 2px solid #2f1000;
 }
 
 nav i {
@@ -55,6 +63,22 @@ main h2 {
     text-align: center;
 }
 
+div.Education p, div.Coursework ul {
+    color: #fbfbf6;
+    background-color: #2e5339;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+div.Education p {
+    padding: 10px;
+}
+
+div.Coursework ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 div.Education {
     grid-row: 1;
     grid-column: 1;
@@ -68,24 +92,67 @@ div.Coursework {
 div.Biography {
     grid-row: 1;
     grid-column: 2;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 div.Skills {
     grid-row: 1 / span 2;
     grid-column: 3;
+    margin-right: 10px;
 }
+
+main img {
+    grid-row: 2;
+    grid-column: 2;
+    width: 400px;
+    align-self: center;
+    justify-self: center;
+    border: 2px solid #2e5339;
+    border-radius: 5px;
+}
+
+.skill {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+  
+.skill-label {
+    flex: 0 0 100px;
+}
+  
+.progress-bar {
+    flex: 1;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 2px solid #2f1000;
+    overflow: hidden;
+}
+  
+.progress {
+    width: 0;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: #2e5339;
+    color: #fff;
+    font-weight: bold;
+}
+  
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 100px;
 }
   
 footer div {
     display: flex;
     align-items: center;
     font-size: large;
-    clear: b
+    clear: both;
 }
 
 footer i {

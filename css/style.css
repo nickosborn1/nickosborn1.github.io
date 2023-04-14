@@ -4,7 +4,7 @@
 
 html {
     background-color: #ebebd3;
-    color: #2f1000
+    color: #2f1000;
 }
 
 header {
@@ -17,6 +17,7 @@ header img {
     width: 50px;
     margin-right: 10px;
     border: 3px solid #2f1000;
+    border-radius: 5px;
 }
 
 nav {
@@ -24,6 +25,7 @@ nav {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+    border-radius: 5px;
 }
 nav a {
     float: left;
@@ -33,15 +35,20 @@ nav a {
     text-decoration: none;
     font-size: 18px;
     flex-grow: 1;
-    border: 2px solid #2f1000
+    border: 2px solid #2f1000;
+    border-left: none;
 }
 
 nav a.active {
     background-color: #57473c;
 }
 
+nav a.first {
+    border-left: 2px solid #2f1000;
+}
+
 nav i {
-    margin-right: 10px
+    margin-right: 10px;
 }
 
 main {
@@ -66,6 +73,7 @@ main p {
     background-color: #2e5339;
     padding: 10px;
     width: 400px;
+    border-radius: 5px;
 }
 
 main img { 
@@ -74,6 +82,7 @@ main img {
     width: 400px;
     border: 5px solid #2e5339;
     margin-left: 0px;
+    border-radius: 5px;
 }
 
 footer {
@@ -86,7 +95,7 @@ footer div {
     display: flex;
     align-items: center;
     font-size: large;
-    clear: b
+    clear: both;
 }
 
 footer i {
